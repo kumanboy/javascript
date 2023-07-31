@@ -1,0 +1,394 @@
+Javascript Nima?
+
+Javascript Web saytlarimizga, Telefon uchun bolgan applarga,Backend uchun dastur yozish imkonini beruvchi dinamik dasturlash tili hisoblanadi.
+
+1 Javascriptda inline va external usullar bor
+
+1 usul inline usul. BU usuldan foydalanmagan maqul. Qisqa Javascript kodlari html ichida ishlatiladi.
+
+2 usul external usul. BU usuldan doyim foydalanish kerak.BU uchun alohid js papka ochiladi va ushbu papka ichida ozimiz uchn kerakli bolgan
+javascript filelarimizni yaratamiz hamda body qismimizga ulaymiz.
+
+O'zgaruvchilar  Variables
+
+Hayotiy misol!
+
+Bir uydan 2chi uyga kochmoqci bolsak oshxona buyumlari alohida qutida, mehmonxona buyumlari alohida qutida, yotoqxona buyumlari alohida qutiga joylaymiz,
+
+va 2chi uyga kochganimizdan song ularni joylashtirish oson boladi.
+
+dasturlashda o'zgaruvchilar yani (eng) Variables bor. Qutilar bizlarning o'zgaruvchilarimizdir
+
+O'zgaruvchilar yaratishda ularga to'g'ri nom berish juda muhim hisoblanadi. Hech qachon hech qanday manoga ega bolmagan o'zgaruvchi yaratish mumkin emas.
+
+O'zgaruvchi yaratishda agar u 2 so'zdan iborat bolsa biz camelCase usulida yozishimiz kerak. borderColor lastName firstName backgroundColor etc.
+
+O'zgaruvchi yaratishda unga nom berishda nomi oldidan son qoyib bolmaydi, Lekin nomdan so'ng son qoysak boladi.# ^ &@ # belgilar qoyib bolmaydi,
+faqat 2 belgi bundan mustasnodir. $(dollar) va _ (tag chiziq) qo'ysak boladi
+
+Javascript o'zining funksiyalarini o'zgaruvchi sifatida yozib bolmaydi. alert bunga misol . alert Javascriptning funksiyasi hisoblanadi.
+
+2name -> xato usul
+
+name2 -> to'g'ri usul
+
+Javascriptda o'zgaruvchilar yaratish 3 xil yo'li bor
+
+1 - yo'l
+
+let kalit so'zi orqali yaratiladi va o'zgaruvchi nomi beriladi
+
+misol uchun let number = 10;
+
+2- yo'l
+
+const kalit so'zi orqali o'zgarmaslar yaratiladi va o'zgarmas nomi beriladi
+
+misol uchun const borderColor = "red";
+
+let va const asosiy farqi const kalit so'zi orqali yaratilgan o'zgarmas  qiymatini to'g'ridan to'g'ri  o'zgartirib bo'lmaydi.
+
+const borderColer = "red";
+
+borderColor = "blue";
+
+lekin const orqali object yaratib uning qiymatini o'zgartirsak bo'ladi
+
+const person ={
+    name = "Muslim",
+}
+
+person.name = "Yusuf"
+
+console.log(person);
+
+qiymat Yusuf chiqadi.
+
+kodlarimiz tekshirimiz uchun console.log ishlatamiz.
+
+misol uchun console.log(number);  ekranga 10 raqami chiqadi
+
+3 - yol
+
+//OLD VERSION
+
+var o'zgaruvchisi orqali yaratiladi. Bu eski yol hisoblanadi
+
+var ham let kabi ishlaydi
+
+lekin var o'zgaruvchisini xatosiz ko'rsatadi agar qiymat korsatadigan bolsak
+
+console.log(name);
+
+var name = "Husan";
+
+bizga undefined deb ko'rsatadi. bu yerda xato emas.
+
+shuning uchun let ishlatgan yaxshi .
+
+TODO bu ajoyib narsa. ozimiz uchun eslatmalar hisoblanadi.
+
+//Qatiy rejim.
+
+Javascript dynamic va yangi dasturlash tili bolgani uchun qatiy rejim yoqib qoyishimiz kerak. Chunki o'zgarishlar sabab
+
+ma'lum vaqt o'tib biz yozgan kodlar ishlamay qolishi mumkin, malumot turlarini korsatmasak ham ozidan
+ozi qoyib yuborishi mumkin (int str float bool)
+
+shuning uchun js file yaratganimizdan so'ng albatta
+
+"use strict"; kodi yozilishi shart
+
+misol rejimQatiy.js fileda
+
+//Malumot turlari
+
+Javascriptda malumot turlari 2ga bo'linadi
+
+1- primitive
+
+primitive:Boolean, Null, Number, String, Symbol,BigInt
+
+2-object
+
+object: Array,Object,Function,RegEx,Date
+
+1-primitive haqida.
+
+Number malumot turi o'z ichiga butun sonlarni hamda kasr sonlarni ham malumot turini belgilash uchun oladi.
+
+Number malumot turini infinty degan shakli ham bor. infinty cheksiz degan manoni bildiradi. Misol 0ni 8ga bolsak hamda
+
+chiqarsak infinity yozuvi chiqadi
+
+Number malumot turini NaN(not a number) degan shakli ham bor. agar biz textni raqamga kopaytirsak
+ekranda NaN deb yozuv chiqadi.
+
+String bu textlar uchun ishlatiladi.
+
+Boolean mantiqiy qiymatlari bor. True va False
+
+Eng kop suhbatlarda soraladigan savollardan biri undefined bilan null nima farqi bor?
+
+Misol uchun console.logda biror ozgaruvchini chiqarmoqchimiz lekin bu ozgaruvchi hech qayerda yaratilmangan
+
+clientAge chaqirib ko'raylik
+
+console.log(clientAge);
+
+hamda bizda `ReferenceError: clientAge is not defined` yozuvi chiqadi. bu nullga teng hisoblanadi.
+
+lekin undefined deb nomlangan o'zgaruvchi  yaratsak lekin qiymat bermasak hamda console.log qilib tekshirgan
+paytimizda undefined deb chiqadi
+
+Demak null va undefined farqi bu null yaratilmagan o'zgaruvchini chaqirganimizda is not defined deb chiqadi
+
+undefined esa o'zgaruvchi yaratilgan boladi lekin qiymat yo'qligi sabab undefined degan malumotni bizga beradi.
+
+misollar primitive.js fileda
+
+2 - object
+
+//Object
+
+Objektlar ham o'zgaruvchilardir. Lekin objektlar juda ko'p qiymatlarni o'z ichiga olishi mumkin.
+
+misol uchun mashina object deb oladigan bolsak uning nomi rangi benzin yoki electrocar bolishi mumkin
+
+const car = {type:"Chevrolet", name:"Spark", position: 4, color: "white"};
+
+bu yerda car object nomi
+
+type, name, position, color,isElectric bu key yoki property
+
+chevrolet, spark, 4, white, false value
+
+ekranga chevrolet sozini chiqarmoqci bolsak
+
+console.log(car.name); yani objectning propertysiga . (nuqta) bilan murojat qilib chiqaryapmiz
+
+console.log(car['type']); bu usul ham ishlatsak boladi lekin nuqta bilan murojaat qilgan qulay hisoblanadi
+
+// Array
+
+Array ham deyarli bir xil object bilan. Objectni bratishkasi ham desak boladi
+
+colors degan array yaratamiz va black red green white massive berishimiz mumkin. Massivelar ichida objectlar ham kelishi
+mumkin, massive ichida son ham bolishi mumkin, massive ichida massive ham bolishi mumkin. hozircha array qanaqa ishlashini
+va syntax etibor bersak boldi.Syntax tomondan qarasak bu yerda qiymatlar bor lekin kalit soz yoq va qiymatlar [] shu belgi
+4 burchak qavs ichida yozilgan.
+
+const colors=["red","blue","green","white"];
+
+tekshirib koramiz
+
+console.log(colors[1]);
+
+ekranga blue chiqadi;
+
+                0     1       2       3
+
+const colors=["red","blue","green","white"];
+
+demak array ichidagi massivelarga murojaat qilish uchun [] 4burchak qavs ichida massive tartib raqamini korsatar ekanmiz
+
+massivelarga murojaat qilishda esda tutish kerak 0 dan boshlanadi
+
+jsObjects.js fileda misollar keltirilgan
+
+//Foydalanuvchi bilan muloqot
+
+  alert()
+
+alert() usuli xabar va OK tugmasi bilan ogohlantirish oynasini ko'rsatadi.
+alert() usuli foydalanuvchiga ma'lumot kelishini xohlaganingizda ishlatiladi.
+Misol:
+alert("Hello Husan");
+
+    confirm()
+
+confirm() usuli xabar, OK tugmasi va Bekor qilish tugmasi bo'lgan dialog oynasini ko'rsatadi.
+Agar foydalanuvchi "OK"ni bosgan bo'lsa, confirm() usuli "true", aks holda "false" qiymatini qaytaradi.
+brauzerda f12 bosib consoleda false true qiymatlarini korishmiz mumkin
+
+Misol:
+const place = confirm("are u ready?");
+
+consoleda kormoqchi bolsak
+
+console.log(place);
+
+bu yerda comfirm malumot turini bilish uchun quyidagi kod yoziladi
+
+console.log(typeof place)
+
+    Prompt()
+
+prompt() usuli foydalanuvchini kiritishni taklif qiladigan dialog oynasini ko'rsatadi.
+Prompt() usuli, agar foydalanuvchi "OK" bosilsa, kirish qiymatini qaytaradi, aks holda u null qiymatini qaytaradi.
+So'rov oynasi ochilganda, foydalanuvchi davom etish uchun "OK" yoki "Cancel" tugmasini bosishi kerak.
+
+prompt("Savol beriladi", "default javob yozishimiz mn yoki bosh qoldirsak ham boladi")
+
+Misol:
+
+  const currentPlace = prompt("Where are you from?","Moscow" );
+
+  consoleda korish uchun
+
+  console.log(currentPlace);
+
+bu yerda prompt malumot turini bilish uchun quyidagi kod yoziladi
+
+console.log(typeof currentPlace)
+
+Esda tuting!
+
+default xolatlarda foydaluvchidan faqat string turidagi malumot keladi
+
+Agar number qilmoqchi bolsak quyidagi kodni ishlatamiz
+
+const age = prompt("How old are u","15")
+
+consoleda koramiz
+
+console.log(age);
+
+bu yerda prompt malumot turini bilish uchun quyidagi kod yoziladi
+
+console.log(typeof age);
+
+number ozgartirmoqchi bolsak
+
+console.log(age + 10); yani "15"+10 consoleda 1510 raqami ciqadi
+
+lekin numberga ozgarmaydi buning uchun prompt() dan oldin +prompt() qollash kerak yani kodimiz ushbu holatga keladi
+
+
+const age = +prompt("How old are u","15")
+
+console.log(age);
+
+malumot turini tekshirsak
+
+console.log(typeof age);
+
+Massivelarimizga kerakli malumotlarni ham qoshsak boladi buning uchun quyidagi koddan foydalanamiz
+
+kelinglar foydalanuvchidan ism familiyasi yoshi email manzili boydoq yoki turmush qurgani haqida qisqa form soraymiz prompt(), confirm() orqali
+
+Eslatma!
+
+Massivelarga murojat qilish uchun raqamlardan foydalanamiz
+
+const userForm =[];
+
+userForm[0] = prompt("What is your name?");
+userForm[1] = prompt("What is your last name?");
+userForm[2] = prompt("How old are you?");
+userForm[3] = prompt("What is your email?");
+userForm[4] = confirm("Are you married?");
+
+console.log(userForm);
+
+agar malumot turini koradigan bolsak
+
+console.log(typeof userForm);
+
+bu yerda object qaytaradi.
+
+Eslatma
+
+Massive Objectning bir qismi aldanib qolmanglar :)
+
+userMurojatQilish.js fileda misollar keltirilgan
+
+// Interpolation (interpolatsiya) oson mavzu
+
+JavaScript-da interpolyatsiya - bu turli maqsadlar uchun mavjud satrga satrlar yoki qiymatlarni kiritish jarayoni.
+Bu funksiya foydalidir, chunki u sizning dasturiy ta'minotingiz uchun kuchli va dinamik qatorlarni yaratishga imkon beradi.
+
+Sorovnoma otkazamiz. Sevimli youtube kanalingiz degan va sorovga malumot kiritlgach bizga kiritgan kanalimiz youtube
+linkini consoleda korsatsin
+
+Misol:
+
+
+const chanel = prompt("What is your favorite youtube channel?");
+
+console.log("https://www.youtube.com/"+ chanel + "/videos");
+
+lekin baribir kod ozroq tushinarsiz hamda interpplatsiya qilishga harakat qilamiz
+
+console.log(`https://www.youtube.com/${chanel}`)
+
+yana bir misol
+
+const user = "Husan";
+const job = "Programmer";
+
+console.log(`User name is ${user}, he  is a ${job}`);
+
+ekranda
+ User name is Husan, he  is a Programmer
+
+Juda Muhim
+
+Alert Prompt Comfirm kabi narsalar terminalda undefined deb beradi chunki bu narsalar asosan brauzerda ishlidi shuni
+narsani yoddan chiqarmaslik kerak
+
+//Operatorlar haqida
+
+2 ta string malumot qoshish
+
+qoshtirnoq ichida kelgan sonni number turiga otkazish uchun oldidan + belgisi qoyiladi
+
+Increament Deacreament
+
+incr, decr
+
+incr +1
+decr -1
+
+postincr++
+postdecr++
+
+postincrement va postdecrement console log qilgan paytimiz hech qanaqa ozgarishsiz qoladi va ozini qiymatini qaytaradi
+
+let postincr = 10;
+let postdecr = 10;
+
+console.log(postincr++);
+console.log(postdecr++);
+
+lekin
+
+console.log(postincr);
+console.log(postdecr);
+
+qilgan paytimiz ularga tasir qiladi va natijasini beradi
+
+
+
+++preincre
+--predecr
+
+preincrement dastlabki  qiymatga 1 qoshadi va predecrement esa dastlabki  qiymatdan 1 ayiradi
+
+koproq postincrement va post decrement ishlatiladi
+
+//qoldiq bolish
+
+% belgisi orqali
+
+console.log(5%2);
+
+//tenglashtirish belgisi
+
+
+
+
+
+
+
+
