@@ -34,4 +34,31 @@
 
 //Tenglik
 
-console.log(5*5 === "25");
+// console.log(5*5 == "25");
+//
+// console.log(5*5 === "25");
+
+// && and , || or Operatori
+
+// const isYoung = true
+//
+// const isOld   = true
+//
+// console.log(isYoung && isOld);
+// const isYoung = true
+//
+// const isOld   = true
+//
+// const isAdult = false
+//
+// console.log(isYoung || isOld || isAdult);
+
+const isYoung = true
+
+const isOld   = true
+
+const isAdult = false
+
+console.log(isYoung && isOld && !isAdult);
+
+

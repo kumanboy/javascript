@@ -385,6 +385,144 @@ console.log(5%2);
 
 //tenglashtirish belgisi
 
+suhbatlarda so'raladigan savollardan biri 2ta tenglik belgisi bilan 3ta tenglik belgisini farqi nimaada
+
+faqat qiymat boyicha tekshirganimizda 2ta tenglik belgisi orqali amalga oshiramiz
+
+Misol
+
+console.log(5*5 == "25");
+
+consoleda true chiqadi
+
+3 ta tenglik belgisi orqali ham qiymat ham malumot turi boyicha tekshirsak false korsatadi
+
+chunki qiymat togri lekin malumot turi notugri
+
+console.log(5*5 === "25");
+
+consoleda false chiqadi
+
+// && and , || or
+
+
+&& = and
+
+&& and operatorimizni kopaytirish deb qarasak tushinish oson boladi yani true 1 ga false 0 ga teng bolgan paytda natijamizni
+
+aniqlab olish oson boladi
+
+olish oson boladi
+
+const isYoung = true
+
+const isOld   = true
+
+console.log(isYoung && isOld);
+
+|| = or
+
+|| or operatorimizni qoshish amali deb qarasak tushinish oson boladi yani true 1 ga false 0 deb qarasak qoshgan paytimizda
+
+natijamizni aniqlab olish oson boladi
+
+
+const isYoung = true
+
+const isOld   = true
+
+const isAdult = false
+
+console.log(isYoung || isOld || isAdult);
+
+! teng emas belgisi tani true qiymat falsega false qiymat truega ozgartiradi
+
+const isYoung = true
+
+const isOld   = true
+
+const isAdult = false
+
+console.log(isYoung && isOld && !isAdult);
+
+//Expression and Operation
+matematik amallar taqossalash operatorlari
+
+*
+/
++
+-
+<=
+>=
+!=
+==
+
+amaliy mashq qilish
+
+# AMALIYOT.UYGA VAZIFA
+
+! uyga vazifa
+
+https://docs.google.com/document/d/17tUVPofFbLu6exIdPUvZqccV04CTOadejx7SBe0t3OU/edit?usp=sharing
+
+codelar amaliyot.js fileda
+
+//Shartli Operatorlar IF ELSE ELSIF
+
+Svetafor hayotiy misol
+
+yosh boyicha kod yozamiz
+
+kino korish uchun tavfsiya qilish kodini yozamiz
+
+ternary operator (3talik operator)
+
+//Switch Case
+
+switch case if elsedan farqi balki yomon tarafi desak ham boladi, taqqoshlash operatorlarini
+
+qoya olmaymiz.
+
+switch case doyim qatiy rejimda ishlaydi
+
+yani ozgaruvchimisz qiymati number bolse caseda ham number korsatilishi kerak
+
+string bolsa string
+
+misol shartOperatorlari.js fileda
+
+//Loop
+
+Doyimiy takrorlanadigan holatlar tsikl yoki loop deyiladi. misol quyosh chiqishi botishi kabi hayotiy misollar.
+
+Javascriptda ham looplar bor va ular 3xil boladi
+
+1dan 100gacha raqamlar ketma ketligini yozish.
+
+1 - usul while kalit sozi orqali
+
+let startNum = 1;
+
+while (startNum <=100){
+    console.log(startNum);
+    startNum++;
+}
+
+2 - usul do while kalit sozlari orqali
+
+//Farq while va do while
+
+while da sikl tanasi berilgan shart baholangandan keyin bajariladi,
+do-while siklida esa tsikl tanasi bajariladi, keyin esa berilgan shart tekshiriladi.
+
+3 - usul For aylanmasi
+
+//AMALIYOT Loops
+
+uyga vazifa 
+
+https://docs.google.com/document/d/1OHn76wZ7IaDg47npH8m8L5YSoNq7M1g89K5yHYD0ZJc/edit?usp=sharing
+
 
 
 
