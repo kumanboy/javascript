@@ -2,9 +2,9 @@
 
 // let startNum = 1;
 
-//While
+// While
 
-// while (startNum <=100){
+// while (startNum <10){
 //     console.log(startNum);
 //     startNum++;
 // }
@@ -19,12 +19,13 @@
 
 // For aylanmasi
 
-// for (let i = 1; i <= 100; i++) {
+//
+// for (let i = 1; i <= 10; i++) {
 //      console.log(i);
 // }
 
 //Kodni kuchaytiramiz braek kalit sozi
-
+//
 // for (let i = 1; i <= 10; i++) {
 //     if (i === 7){
 //         break;
@@ -34,8 +35,8 @@
 
 //Kodni kuchaytiramiz continue kalit sozi
 //
-// for (let i = 1; i <= 10; i++) {
-//     if (i === 7){
+// for (let i = 1; i <= 100; i++) {
+//     if (i === 39){
 //         continue;
 //     }
 //     console.log(i);

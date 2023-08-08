@@ -2,7 +2,7 @@
 
 // const age = +prompt("How old are u","13");
 //
-// if(age>=18){
+// if(age >= 18){
 //     console.log("You are adult");
 // }else{
 //     console.log("You are not adult");
@@ -35,10 +35,10 @@
 
 //Switch Case
 
-const color = "white";
-
+const color = 2;
+//
 switch(color){
-    case "red":
+    case 2:
         console.log("STOP");
         break;
     case "yellow":

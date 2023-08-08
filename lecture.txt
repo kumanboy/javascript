@@ -454,8 +454,9 @@ matematik amallar taqossalash operatorlari
 -
 <=
 >=
-!=
+!==
 ==
+===
 
 amaliy mashq qilish
 
@@ -523,10 +524,116 @@ uyga vazifa
 
 https://docs.google.com/document/d/1OHn76wZ7IaDg47npH8m8L5YSoNq7M1g89K5yHYD0ZJc/edit?usp=sharing
 
+for (i=1,i++,i<3){
+
+  console.log("Dushanba,Seshanba,...,Yakshanba");
+
+}
+
+const seasonsName = ["Spring,Summer,Autumn,Winter"] ;
+
+let i = 1;
+
+do {
+     i<2;
+     i++;
+}
+Funksiya
+
+JavaScript funktsiyasi ma'lum bir vazifani bajarish uchun mo'ljallangan kod blokidir.
+
+JavaScript funktsiyasi "biror narsa" uni chaqirganda bajariladi.
+
+FUnksiya vazifa bir yozgan kodni 2marta takrorlamaslik. Misol uchun 2 marta bizda  bir xil vazifani bajaruvchi oyna chiqarmoqchi
+
+bolsak aynan shunaqa vaziyatda 2 marta takrorlamasdan 1marta yozsak boladi.Yani kodni takrorlamaslik
+
+funksiya yaratish uchun function kalit sozidan foydalaniladi hamda funksiya nomi yoziladi.keyin qavs ochiladi.qavs ichida
+
+parametrlari yoziladi songra jingalak qavs ichida ozimiz uchun kerakli kod yoziladi.
+
+Funksiyalarimizda LocalVariable hamda GlobalVariable bor.Agar biz funksiya ichida ozgaruvchi yani variable yaratasak
+
+hamda uni funksiya tashqarisida ishlatib korsak ishlamidi.Faqat funksiya ichida ishlidi va bu LocalVariable deb ataladi
+
+Return kalit sozi
+Return operatori dasturda funksiyaning bajarilishini tugatish uchun ishlatiladi.
+Funktsiya qiymatlarni primitive va objekt turlarida bo'lgan ikkita shaklda
+qaytarishi mumkin.Return agar ishlatilmasa, siz funksiyadan qiymatni ololmaysiz,
+u aniqlanmagan holda qaytariladi.
+
+Misolimizda korib turganimizdek funksiyamizda a va b qiymatlari qaytarilyapti endi biz bu funksiyani chaqirsak boladi.
+
+misol uchun consoleda
+
+return kalit sozini yana bir yaxshi tomoni GlobalO'zgaruvchini chaqirishga yordam beradi.yani funksiyadan
+
+kelayotgan malumotni ozgaruvchiga beramiz
+
+Function turlari
+
+Function Declaration
+Function Expression
+Arrow Function
+
+Function Decloration
+
+Script kodimiz ishlashidan oldin yaratilgan
+boladi va biz uni funksiyadan oldin haqirishimiz mumkin
+
+Function Expression
+
+Qachonki kodimiz ushbu funksiyaga yetib kelganda yaratiladi faqat funksiyadan keyin chaqiriladi
+
+O'zini shaxsiy context this mavjud emas. yana bir narsa return kalit sozi avtomatik tarzda qollaniladi arrow functionda
+
+//Metod va Xususiyat
+
+kerakli qollanma https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
+
+Metod bu yordamchi funksiya desak boladi yordamchi qiymat desak boladi.
+
+//Amaliyot
+
+uyga vzafasi https://docs.google.com/document/d/1VXf9bnqlfVuSqpOOuR3_JMpR-wxMCYmcAVsNqaKubEQ/edit?usp=sharing
+
+//Callbacks
+
+Zadderjka ozbek tilida suniy kechikish deb nomlanadi. Asosan callbacklarni databazadan malumot olishda qollaymiz yani
+
+databazadan birdaniga malumot yetib kelmaydi malumot bir necha milli sekunddda yoki sekunnda yoki minutda kelishi mn.
+
+shu sababli callbacks kerak boladi ularni functionlarda ishlatib koramiz.qisqa qilib aytganda
+
+callback bu biror funksiyamiz ishlagandan keyin ishlidigan funksiya hisoblanadi
+
+//Objectlar
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dars uchun Raxmat :)
 
 
 

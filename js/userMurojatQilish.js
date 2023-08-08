@@ -2,41 +2,43 @@
 
 // Alert
 
-// alert("Hello Husan");
+// alert("Gulasal va Jasmina");
 
 // Confirm
 
-// const place = confirm("are u ready?");
-
-// console.log(place);
-
-// console.log(typeof place)
+// const downloadExit = confirm("saytdan chiqish xohlisanmi?");
+//
+// console.log(downloadExit);
+// console.log(typeof downloadExit);
 
 // Prompt
 
-// const currentPlace = prompt("Where are you from?", "Moscow");
-
-// console.log(typeof currentPlace);
-
+// const currentPlace = prompt("Where are you from?");
+//
+// console.log(currentPlace);
 // Prompt string dan number
 
 // const age = +prompt("How old are u","15")
-
+//
 // console.log(age);
-
+//
 // console.log(typeof age);
+//
+// console.log(age + 10);
 
 // Array User uchun form yozamiz
 
-// const userForm =[];
+const sorovnoma = [];
+
+sorovnoma[1] = confirm("Shartlarga rozimisiz?");
+sorovnoma[2] = prompt("Ismingizni kiriting");
+sorovnoma[3] = +prompt("Yoshingizni kiriting");
+sorovnoma[4] = prompt("Emailni kiriting");
+sorovnoma[5] = prompt("Uylanganmisiz?");
+sorovnoma[6] = prompt("Malumotingizni kiriting");
+
+console.log(sorovnoma);
+
+console.log(typeof sorovnoma);
+
 //
-// userForm[0] = prompt("What is your name?");
-// userForm[1] = prompt("What is your last name?");
-// userForm[2] = prompt("How old are you?");
-// userForm[3] = prompt("What is your email?");
-// userForm[4] = prompt("Are you married?");
-// userForm[5] = confirm("Do u like our form?");
-//
-// console.log(userForm);
-//
-// console.log(typeof userForm);
