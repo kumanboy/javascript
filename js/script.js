@@ -2,9 +2,10 @@
 
 // 1 - yo'l
 
-let number = 10;
+// let number = 10;
+//
+// console.log(number);
 
-console.log(number);
 
 // 2 - yo'l
 

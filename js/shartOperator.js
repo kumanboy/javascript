@@ -21,7 +21,7 @@
 
 //ternary operator
 
-// const age = +prompt("How old are u","13");
+const age = +prompt("How old are u","13");
 
 // if(age>=18){
 //     console.log("You are adult");
@@ -29,7 +29,7 @@
 //     console.log("You are not adult");
 // }
 
-// (age >= 18) ? console.log("You are adult") : console.log("You are not adult");
+(age >= 18) ? console.log("You are adult") : console.log("You are not adult");
 
 //bu yerda ? belgisi IFni anglatadi  : ELSEni anglatadi
 

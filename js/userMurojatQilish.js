@@ -28,17 +28,25 @@
 
 // Array User uchun form yozamiz
 
-const sorovnoma = [];
+// const sorovnoma = [];
+//
+// sorovnoma[1] = confirm("Shartlarga rozimisiz?");
+// sorovnoma[2] = prompt("Ismingizni kiriting");
+// sorovnoma[3] = +prompt("Yoshingizni kiriting");
+// sorovnoma[4] = prompt("Emailni kiriting");
+// sorovnoma[5] = prompt("Uylanganmisiz?");
+// sorovnoma[6] = prompt("Malumotingizni kiriting");
+//
+// console.log(sorovnoma);
+//
+// console.log(typeof sorovnoma);
 
-sorovnoma[1] = confirm("Shartlarga rozimisiz?");
-sorovnoma[2] = prompt("Ismingizni kiriting");
-sorovnoma[3] = +prompt("Yoshingizni kiriting");
-sorovnoma[4] = prompt("Emailni kiriting");
-sorovnoma[5] = prompt("Uylanganmisiz?");
-sorovnoma[6] = prompt("Malumotingizni kiriting");
+const askQuestion = prompt("Ismingizni kiriting");
 
-console.log(sorovnoma);
+if (askQuestion === null || askQuestion === "") {
+    console.log("Iltimos qaytadan urinib ko'ring");
+}
 
-console.log(typeof sorovnoma);
+console.log(askQuestion);
 
 //

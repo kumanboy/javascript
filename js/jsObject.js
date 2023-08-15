@@ -22,7 +22,7 @@
 
 
 //Objectlar koproq
-
+//
 // const car = {
 //     type:"Chevrolet", // Data Type: String
 //     name:"Spark",     // Data Type: String
@@ -31,8 +31,16 @@
 //         doors:"white",
 //         wheels:"black"
 //     },   // Data Type: Object
-//     isElectric: false // Data Type: Boolean
+//     isElectric: false, // Data Type: Boolean
+//     price: {
+//         chair: 1000,
+//         engine:2000,
+//         gas:500,
+//     }
 // };
+// console.log(car['price']['chair']);
+//
+// console.log(typeof car['position']);
 
 //delete metodi obyekt  propertysini o'chirish
 //
@@ -88,7 +96,7 @@ const car = {
         console.log("Start engine");
     },
 };
-car.howToStart();
+// car.howToStart();
 
 //Agar siz ushbu bosqichgacha hamma kodlar oxshagan bolsa tabriklayman siz ozingizni 1chi metodingizni yaratdingiz
 
@@ -96,7 +104,7 @@ car.howToStart();
 
 // const doors = car.color.doors;
 // const wheels = car.color.wheels;
-
+//
 // console.log(doors,wheels);
 
 //lekin Javascriptda obyekt ichidagi propertylarni olish uchun

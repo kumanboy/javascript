@@ -1,8 +1,8 @@
 'use strict';
 
 //String boyicha metodlar hamda property
-
-// const user = "Husan";
+//
+const user = "Husan";
 //
 // console.log(user.length);
 //
@@ -26,25 +26,25 @@
 //
 // console.log(user.toLowerCase());
 //
-// const salomlashish = "Salom Dunyo";
+const salomlashish = "   Salom Dunyo";
 //
 // //aynan biror harf bormi yoki yoqligini tekshirish uchun indexOf metodi ishlatiladi
 //
-// console.log(salomlashish.indexOf("a"));
+// console.log(salomlashish.indexOf("l"));
 //
 // // salom dunyo sozidan faqat dunyo sozini olmoqchi bolsak slice() metodini ishlatamiz
 //
-// console.log(salomlashish.slice(6,11)); //end number qoymasak ham boladi
+// console.log(salomlashish.slice(-20)); //end number qoymasak ham boladi
 //
 // // substring ham slice kabidir farqi slicedan minus qiymatni qabul qilmaydi
 //
-// console.log(salomlashish.substring(6,11)); //end number qoymasak ham boladi
+// console.log(salomlashish.substring(10)); //end number qoymasak ham boladi
 
-// const num = 8.8;
+// const num = 16;
 //
 // // kasr sonni butun son qilish uchun Math.round() nomli metodi ishlatiladi
 //
-// console.log(Math.round(num));
+// console.log(Math.sqrt(num));
 //
 // //parseInt va parseFloat metodlari
 //

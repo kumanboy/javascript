@@ -609,6 +609,27 @@ callback bu biror funksiyamiz ishlagandan keyin ishlidigan funksiya hisoblanadi
 
 //Objectlar
 
+object.js
+
+//Massivelar
+
+massiv.js fileda
+
+//Clonlash ES6
+
+cloning.js fileda
+
+//OOP
+
+oop.js fileda
+
+//amaliyot
+
+Amaliyotda OOPga asoslanib kodimizni kuchaytiramiz
+
+uyga vazifa
+
+https://docs.google.com/document/d/1KmbQxM0SjkIv9KA7Wh6c3FbuXOtj1Hkm3_LiN0ReXaU/edit?usp=sharing
 
 
 
@@ -633,7 +654,6 @@ callback bu biror funksiyamiz ishlagandan keyin ishlidigan funksiya hisoblanadi
 
 
 
-Dars uchun Raxmat :)
 
 
 
