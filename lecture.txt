@@ -631,8 +631,54 @@ uyga vazifa
 
 https://docs.google.com/document/d/1KmbQxM0SjkIv9KA7Wh6c3FbuXOtj1Hkm3_LiN0ReXaU/edit?usp=sharing
 
+//Dynamic Typing
 
+dynamic.js fileda
 
+//DOM elementlar bilan ishlash
+
+elementsOfDOM.js fileda
+
+//Methodlar bilan ishlash
+
+workingWithMethods.js fileda
+
+//Amaliyot
+
+DOM boyicha amaliy ishlash
+
+kerakli kodlar domPractise.html domStyle.css domPractise.js filelarda
+
+img icons kerakli rasmlar
+
+uyga vazifa
+
+https://docs.google.com/document/d/1jsQ5FuweCN05BY_KvLC6SMJ3PILULxxoz-Sl3wIg1Fo/edit?usp=sharing
+
+//Events
+
+events.js fileda
+
+//Navigation DOM
+
+navigationDOM.js fileda
+//Amaliyot
+Eventlarni ham ishlatish
+
+kerakli kodlar domEventPractise.html domStyle.css domEventPractise.js filelarda
+
+img icons kerakli rasmlar
+
+uyga vazifa link
+https://docs.google.com/document/d/1uNeBSBZ1-7T4TrV2KOpCN4NhYs8bOvKPHS4qttMhmU0/edit?usp=sharing
+
+//Async, defer. Dynamic scriptlar
+
+dynamicScriptlar.js
+
+//Developer Tools
+
+developerTools.js
 
 
 

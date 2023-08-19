@@ -59,13 +59,13 @@
 // Function Declaration varga oxshash
 
 
-// const sumOfAandB = calculator(10,5);
-//
-// console.log(sumOfAandB);
-//
-// function calculator(a , b){
-//     return a+b;
-// }
+const sumOfAandB = calculator(10,5);
+
+console.log(sumOfAandB);
+
+function calculator(a , b){
+    return a+b;
+}
 
 //Function Expression
 

@@ -24,8 +24,8 @@
 //      console.log(i);
 // }
 
-//Kodni kuchaytiramiz braek kalit sozi
-//
+// Kodni kuchaytiramiz braek kalit sozi
+
 // for (let i = 1; i <= 10; i++) {
 //     if (i === 7){
 //         break;
@@ -33,11 +33,17 @@
 //     console.log(i);
 // }
 
-//Kodni kuchaytiramiz continue kalit sozi
+// Kodni kuchaytiramiz continue kalit sozi
+
+
+const user = {
+    name: "John",
+    age: 30,
+    isMarried: true,
+    friends: ["Jack", "Jill", "Jane"],
+    hasMoney: false
+}
 //
-// for (let i = 1; i <= 100; i++) {
-//     if (i === 39){
-//         continue;
-//     }
-//     console.log(i);
-// }
+delete user.hasMoney
+
+console.log(user)

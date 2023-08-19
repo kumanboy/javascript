@@ -7,9 +7,9 @@
 //
 // let x = 5
 // let y = x
-//
+// //
 // y= y+5
-//
+// //
 // console.log(x)
 // console.log(y)
 
@@ -27,9 +27,9 @@
 // const newNumber = number
 //
 // newNumber.x = 10
-//
-// //endi qiymatlarni consoleda tekshirib koramiz
-//
+// //
+// // //endi qiymatlarni consoleda tekshirib koramiz
+// //
 // console.log(number)
 // console.log(newNumber)
 
@@ -38,7 +38,7 @@
 //misol. funksiya yarataylik uning obj argumenti bolsin, va funksiya ichida loop yarataylik. hamda funksiya tashqarisida
 //  numbers nomli obyekt yarataylik.hamda u funksiya ichidagi argumentimizni clonlasin yani nusxasni olsin
 
-// function cloning(obj){
+// function qulpinsa(obj){
 //     let newObj = {}
 //
 //     for (let key in obj){
@@ -50,11 +50,11 @@
 //     x: 5,
 //     y: 10
 // }
-//
-// const newNumber = cloning(number)
-//
+// //
+// const newNumber = qulpinsa(number)
+// //
 // newNumber.x = 15
-//
+// //
 // console.log(number);
 // console.log(newNumber);
 //kodimiz mukammalashtiramiz, object ichida yaratilgan obyektning qiymatini olishga va ozgartirishga harakat qilamiz
@@ -78,7 +78,7 @@
 // const newNumber = cloning(number)
 //
 // newNumber.x = 15
-// newNumber.z.a = 15
+// newNumber.z.b = 15
 //
 // console.log(number);
 // console.log(newNumber);
@@ -116,28 +116,31 @@
 //     x: 5,
 //     y: 10,
 // }
-//
+// //
 // const addNumber = {
-//     z:15
+//     z:15,
+//     a:20,
+//     b:25,
 // }
-// //shu joyda 2ta object birlashtiramiz
-//
-// const allNumber = Object.assign(number, addNumber);
-//
+// // //shu joyda 2ta object birlashtiramiz
+// //
+// const allNumber = Object.assign(addNumber, number);
+// //
 // console.log(allNumber);
 
 //Endi biz clonlash yani objectlardan nusxa olish organib oldik kelinglar yanada chuqurroq mavzularga otamiz
 
 //misol, yangi array yaratamiz,hamda uni numbers nomli ozgaruvchiga nusxalaymiz. buning uchun slice() methodidan foydalanamiz
 
-const arr = [1, 2, 3, 4, 5];
 
-const numbers = arr.slice();
-
-numbers[1] = 'husan';
-
-//consoleda esa kodlarimizni koramiz
+// const arr = [1, 2, 3, 4, 5];
 //
+// const numbers = arr.slice();
+// // //
+// numbers[1] = 'husan';
+// //
+// // //consoleda esa kodlarimizni koramiz
+// // //
 // console.log(arr);
 // console.log(numbers);
 //
@@ -145,9 +148,10 @@ numbers[1] = 'husan';
 //
 // //2ta massivemizni birlashtirmoqci bolsak spread operatori hammasini hal qiladi
 //
-// const country = ['Uzbekistan', 'Tajikistan', 'Kazakhstan'];
-// const capital = ['Tashkent', 'Dushanbe', 'Astana'];
+const country = ['Uzbekistan', 'Tajikistan', 'Kazakhstan'];
+const capital = ['Tashkent', 'Dushanbe', 'Astana'];
 //
-// const countryCapital = [...country, ...capital]; // ...(3ta nuqta) spread operatori hisoblanadi
-//
-// console.log(countryCapital);
+const countryCapital = [...country, ...capital]; // ...(3ta nuqta) spread operatori hisoblanadi
+
+console.log(countryCapital);
+

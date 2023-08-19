@@ -48,7 +48,7 @@ const salomlashish = "   Salom Dunyo";
 //
 // //parseInt va parseFloat metodlari
 //
-// const marginLeft = "12.5px";
+// const marginLeft = "12.5 px";
 //
 // console.log(parseInt(marginLeft)); // bu yerda 12 soni chiqadi
 //

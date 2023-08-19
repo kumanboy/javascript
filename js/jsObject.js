@@ -50,7 +50,7 @@
 
 //obyektimizdagi qiymatlarni uzunligi bilmoqci bolsak length peoperty ishlamidi
 
-//shuning uchun keys metodi ishlatiladi undan song length property ishlatiladi
+//shuning uchun Object.keys metodi ishlatiladi undan song length property ishlatiladi
 
 //keys metodi array qaytaradi qiymatlarni massive qaytaradi
 
@@ -62,9 +62,9 @@
 
 //buning uchun in kalit sozi for aylanmasidan foydalanamiz
 
-// for (let key in car) {
-//     console.log(`Car property ${key}  and value ${car[key]}`);
-// }
+for (let key in car) {
+    console.log(`Car property ${key}  and value ${car[key]}`);
+}
 
 // run qilgan paytimizda color object qaytaryapti ularni ham korish uchun if elsedan fodalanib
 
@@ -82,20 +82,20 @@
 //for aylanmasida in va of kalit sozlari bor. bir biridan farqi of arraylar uchun ishlidi in esa objectlar un ishlidi
 
 //keling objectimiz ichida ozimizni methodimizni yozaylik. misol uchun mashina qanaqa qilib o't oladi degan funksiya
-
-const car = {
-    type:"Chevrolet", // Data Type: String
-    name:"Spark",     // Data Type: String
-    position: 4,      // Data Type: Number
-    color: {
-        doors:"white",
-        wheels:"black"
-    },   // Data Type: Object
-    isElectric: false, // Data Type: Boolean
-    howToStart: function(){
-        console.log("Start engine");
-    },
-};
+//
+// const car = {
+//     type:"Chevrolet", // Data Type: String
+//     name:"Spark",     // Data Type: String
+//     position: 4,      // Data Type: Number
+//     color: {
+//         doors:"white",
+//         wheels:"black"
+//     },   // Data Type: Object
+//     isElectric: false, // Data Type: Boolean
+//     howToStart: function(){
+//         console.log("Start engine");
+//     },
+// };
 // car.howToStart();
 
 //Agar siz ushbu bosqichgacha hamma kodlar oxshagan bolsa tabriklayman siz ozingizni 1chi metodingizni yaratdingiz
@@ -110,10 +110,24 @@ const car = {
 //lekin Javascriptda obyekt ichidagi propertylarni olish uchun
 // destruptizatsiya usulidan foydalanishimiz kk
 
-
-const {doors,wheels} = car.color;
-
-console.log(doors,wheels);
+//
+// const {doors,wheels} = car.color;
+//
+// console.log(doors,wheels);
 
 //Esda saqlang Javascript Obyektga Yo'naltirilgan Dasturlash Tili hisoblanadi inglizchada
 // OOP (Object Oriented Programming) deyiladi.
+
+
+
+
+
+
+
+
+
+
+function user (name,familyName){
+    console.log(`hello,my name is ${name},familyname is ${familyName}`)
+}
+user("Ma'ruf","xayrullaev")

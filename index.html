@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello Javascript</h1>
-    <!-- 
-     Inline usul 
-    <script>
-      alert("Inline usul");
-    </script> -->
-    <!-- External usul  -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!--<h1>Hello Javascript</h1>-->
+<div class="app">
+    <div class="box" id="box"></div>
+    
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    
+    <div class="circle__wrapper">
+        <div class="circle">A</div>
+        <div class="circle">B</div>
+        <div class="circle">C</div>
+        <div class="circle">D</div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+</div>
+<!--
+ Inline usul
+<script>
+  alert("Inline usul");
+</script> -->
+<!-- External usul  -->
+<!--3 xil usulda eventslar ishlatishimiz mn 1 usul attributlar yordamida-->
+<!--1 usul deyarli ishlatilmaydi.Hech kim deyarli foydalanmidi-->
+<!--2 usul taglarga id berib uni js fileda event berish-->
+<div class="events">
+<!--    <button onclick="alert('Click')">A</button> &lt;!&ndash;1 usul&ndash;&gt;-->
+    
+    <button>A</button>
+    <div class="overlay">
+        <button id="btn">B</button> <!--2 usul-->
+    </div>
+    <button>C</button>
+</div>
+    <button data-current="h">Submit</button>
+
+
+<a href="https://youtu.be/1uPaJT6qAvA?si=4QgCCjv7gmqKDTDa" target="_blank">youtube link</a>
+
+<!--<script defer src="js/dynamicScriptlar.js"></script>--> <!--defer atributi DOM elementimiz yuklanishini kutadi songra html codelar ishlidi-->
+<!--<script src="js/dynamicScriptlar.js"></script>--> <!--async atribut script filelarimiz hajmi boladi 100kb 10 kb 150kb 200kb
+    misol un 4ta script filemiz bor va uning hajmlari turlicha shunda async ishlatadigan bolsak katta hajmlilarni yuklanishini
+    kutmasdan kichigidan boshlab yuklaydi
+-->
+
+<p>Hello Guys</p>
+
 
 <!--    <script src="js/script.js"></script>-->
 <!--    <script src="js/userMurojatQilish.js"></script>-->
 <!--    <script src="js/interpolation.js"></script>-->
-  <script src="js/amaliyot.js"></script>
+<!--  <script src="js/amaliyot.js"></script>-->
 <!--  <script src="js/shartOperator.js"></script>-->
 <!--  <script src="js/operations.js"></script>-->
 <!--  <script src="js/massiv.js"></script>-->
+<!--    <script src="js/elementsOfDOM.js"></script>-->
 <!--  <script src="js/oop.js"></script>-->
-  </body>
+<!--<script src="js/workingWithMethods.js"></script>-->
+<!--<script src="js/navigationDOM.js"></script>-->
+<!--<script src="js/events.js"></script>-->
+<script src="js/developerTools.js"></script>
+
+</body>
 </html>

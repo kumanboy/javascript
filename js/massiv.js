@@ -1,6 +1,10 @@
 'use strict';
 
-// const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5,'Husan','uzbekistan'];
+//
+// arr.forEach((element,index)=>{
+//     console.log(`${index}: ${element}`);
+// })
 
 //pop method arraydagi oxirgi elementini olib tashlaydi
 
@@ -10,17 +14,17 @@
 
 //push method arraydagi oxirgi elementga yangi element qoshadi
 
-// arr.push(6);
+// arr.push('gulasal');
 // // //
 // console.log(arr);
 
-//shift method arraydagi boshidagi elementni olib tashlaydi
-//unshift method arraydagi boshidagi elementni qoshadi
+//shift method array boshidagi elementni olib tashlaydi
+//unshift method array boshidagi elementni qoshadi
 //shift va unshift ishlatish maslahat bermayman chunki massiveni
 //qaytadan ishlab chiqadi
 
 //loop hosil qilamiz arraylar bilan
-
+//
 //  for (let i = 0; i < arr.length; i++) {
 //      console.log(arr[i]);
 // }
@@ -35,11 +39,11 @@
 //Suhbatlarda soraladigan savollardan biri
 //length propertysi massivelarimiz ichidagi qiymatlarni sanab otirmaydi
 // massive ichidagi oxirgi indexga 1ni qoshib qoyadi
-const arr = [1, 2, 3, 4, 5];
-
-arr [99]= 'malik'
-
-console.log(arr.length);
+// const arr = [1, 2, 3, 4, 5];
+//
+// arr [99]= 'malik'
+//
+// console.log(arr.length);
 
 //consoleda 5 ciqadi
 
@@ -62,6 +66,7 @@ console.log(arr.length);
 //     console.log(`${index}: ${item} massivimiz bu ${arr}`);
 // })
 
+
 //forEach nechta parametr qabul qiladi deb suhbatlarda kop sorashadi,va sizning javobingiz 3ta deb javob berishingiz kerak
 //1-parametr bu element, 2-parametr bu index, 3-parametr bu massivening ozi
 //consoleda koramiz.
@@ -70,23 +75,23 @@ console.log(arr.length);
 
 //kelinglar foydaluvchiga savol beraylik hamda u massive qabul qilsin
 
-// const movies = prompt('What is your favorite movie?');
-//split methodi orqali massive olishimiz mumkin. split metodini ichida splitter va limit bor biz split bilan ishlimiz.
-//split metodi ishlatish uchun qanaqadir belgi yozishimiz kerak, massive hosil bolishi un , qoyamiz
-// const userMovies = movies.split(',');
-// console.log(userMovies);
-//join methodi orqali massivemizni elementlarini string malumot turida olishimz mn
+// const movies = prompt('What is your favorite movies?');
+// //split methodi orqali massive olishimiz mumkin. split metodini ichida splitter va limit bor biz split bilan ishlimiz.
+// //split metodi ishlatish uchun qanaqadir belgi yozishimiz kerak, massive hosil bolishi un , qoyamiz
+// const userMovies = movies.split(', ');
+// // console.log(userMovies);
+// //join methodi orqali massivemizni elementlarini string malumot turida olishimz mn
 // console.log(userMovies.join('-'));
-//sort methodi alfabet boyicha tartiblab beradi
+// sort methodi alfabet boyicha tartiblab beradi
 // userMovies.sort();
 // console.log(userMovies);
 //sort methodi raqamlar tartiblashi uchun bitta callback function yaratilish kk.
 
-// const arr = [1, 2, 3, 4, 5,23,414,42,6,44,76,24];
-
-// arr.sort(compareFn);
+const arr = [1, 2, 3, 4, 5,23,414,42,6,44,76,24];
+//
+// arr.sort(shuhratFn);
 // console.log(arr);
-// function compareFn(a,b){
+// function shuhratFn(a,b){
 //     return a-b;
 // }
 //Eslatma callback functionlar chaqirilmidi. Agar biz raqamlarimizni
