@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,7 +17,7 @@
     <button>4</button>
     <button>5</button>
     
-    <div class="circle__wrapper">
+    <div id="circle__wrapper">
         <div class="circle">A</div>
         <div class="circle">B</div>
         <div class="circle">C</div>
@@ -30,6 +30,13 @@
         <div class="heart"></div>
     </div>
 </div>
+
+<h1>The Document Object</h1>
+<h2>The addEventListener() Method</h2>
+
+<p>Click anywhere in the document to display "Hello World!".</p>
+
+<p id="demo"></p>
 <!--
  Inline usul
 <script>
@@ -40,18 +47,18 @@
 <!--1 usul deyarli ishlatilmaydi.Hech kim deyarli foydalanmidi-->
 <!--2 usul taglarga id berib uni js fileda event berish-->
 <div class="events">
-<!--    <button onclick="alert('Click')">A</button> &lt;!&ndash;1 usul&ndash;&gt;-->
+    <button onclick="alert('Click')">A</button> <!--1 usul-->
     
-    <button>A</button>
+    <button id="btn">A</button>
     <div class="overlay">
-        <button id="btn">B</button> <!--2 usul-->
+        <button id="dbtn">B</button> <!--2 usul-->
     </div>
-    <button>C</button>
 </div>
-    <button data-current="h">Submit</button>
+<button data-current="h">C</button>
+<button><a href="https://youtu.be/1uPaJT6qAvA?si=4QgCCjv7gmqKDTDa" target="_blank" style="color: white">Submit</a></button>
 
 
-<a href="https://youtu.be/1uPaJT6qAvA?si=4QgCCjv7gmqKDTDa" target="_blank">youtube link</a>
+<!--<a href="https://youtu.be/1uPaJT6qAvA?si=4QgCCjv7gmqKDTDa" target="_blank">youtube link</a>-->
 
 <!--<script defer src="js/dynamicScriptlar.js"></script>--> <!--defer atributi DOM elementimiz yuklanishini kutadi songra html codelar ishlidi-->
 <!--<script src="js/dynamicScriptlar.js"></script>--> <!--async atribut script filelarimiz hajmi boladi 100kb 10 kb 150kb 200kb
@@ -59,9 +66,15 @@
     kutmasdan kichigidan boshlab yuklaydi
 -->
 
-<p>Hello Guys</p>
+<!--<p>Hello Guys</p>-->
+<button class="btn"></button>
 
-
+<link
+href=" https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXFTTzFnU3hqTVBTZ1k2R21MTlkzY1p0eGJ
+oZ3xBQ3Jtc0trTmdJUWtZYW1nS2pMQ2hYckRHLWZYTEJuVjJseEd5MXJmSHptVTFMTmt5XzctS2Y3dnduQzJSNzNvOXRQR1hjOW9qN1F6NjRFdzhJQUluV1B
+jTG1tQjllc0hMRHc1QV81Mm9Xa1BzTzMwclEycmpTUQ&q=https%3A%2F%2Fwww.instagram.com%2Fbadgalriri%2F&v=0-p5EbAsxUM"
+rel="stylesheet"
+/>
 <!--    <script src="js/script.js"></script>-->
 <!--    <script src="js/userMurojatQilish.js"></script>-->
 <!--    <script src="js/interpolation.js"></script>-->
@@ -69,12 +82,11 @@
 <!--  <script src="js/shartOperator.js"></script>-->
 <!--  <script src="js/operations.js"></script>-->
 <!--  <script src="js/massiv.js"></script>-->
-<!--    <script src="js/elementsOfDOM.js"></script>-->
+  <script src="js/elementsOfDOM.js"></script>
 <!--  <script src="js/oop.js"></script>-->
 <!--<script src="js/workingWithMethods.js"></script>-->
 <!--<script src="js/navigationDOM.js"></script>-->
 <!--<script src="js/events.js"></script>-->
-<script src="js/developerTools.js"></script>
-
+<!--<script src="js/developerTools.js"></script>-->
 </body>
 </html>

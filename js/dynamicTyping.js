@@ -6,7 +6,7 @@
 //123 number turidagi son bor shu qiymatni string ozgartirmoqchi bolsak qaysi yoldan foydalanamiz
 //1) stringga otish
 
-// console.log(String(4));
+// console.log(typeof String(4));
 
 //qiymat string malumot turida
 
@@ -16,7 +16,7 @@
 
 //3) number malumot turiga otkazish
 
-// console.log(Number('123'))
+// console.log(  Number('husan'))
 
 //4) number malumot turiga otkazish
 
@@ -24,7 +24,7 @@
 
 //5) number malumot turiga otkazish parseInt() methodi orqali
 
-// console.log(parseInt('123'));
+// console.log(parseFloat('12.3 px'));
 
 //booleanga otish
 
@@ -43,8 +43,10 @@
 
 //2) boolean malumot turiga otkazish
 
-// console.log(typeof Boolean('4'));
+
+
+// console.log( Boolean(0));
 
 //3) boolean malumot turiga otkazish
 
-// console.log(typeof !!'4');
+// console.log( !!'');

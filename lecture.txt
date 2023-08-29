@@ -1,4 +1,4 @@
-Javascript Nima?
+    Javascript Nima?
 
 Javascript Web saytlarimizga, Telefon uchun bolgan applarga,Backend uchun dastur yozish imkonini beruvchi dinamik dasturlash tili hisoblanadi.
 
@@ -679,6 +679,18 @@ dynamicScriptlar.js
 //Developer Tools
 
 developerTools.js
+
+//ClassList
+
+classList.js
+
+//Delegatsiya
+
+delegatsiya.js
+//Loyiha
+https://drive.google.com/drive/folders/1a2wMt2pA_-mOfnaxViJfFI6D2mlNezks?usp=sharing
+
+//Animatsiya, setTimeOut , setInterval
 
 
 

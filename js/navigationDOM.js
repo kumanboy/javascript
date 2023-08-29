@@ -17,7 +17,7 @@
 // console.log(document.body.firstChild); //body tagimiz ichidagi 1chi tagni korsatmoqda
 // console.log(document.body.lastChild);  //body tagimiz ichidagi oxirgi tagni korsatmoqda
 //
-// console.log(document.querySelector('#btn').parentNode) //bu yerda ham bola ham ota tagimizni korishimiz mn
+    // console.log(document.querySelector('#btn').parentNode) //bu yerda ham bola ham ota tagimizni korishimiz mn
 //
 // //html taglarini olishning yana bir yoli data-current javascriptda kalit sozini
 // //ishlatishimiz mumkin. yani id class berib otirishimiz shart emas
@@ -28,7 +28,7 @@
 // //undan avvalgi tagni olmoqchi bolsak previousSibling  ishlatamiz
 // //2la holatda ham text korsatmoqda chunki u yerda probel bor.
 //
-// console.log(document.querySelector('[data-current="h"]').nextSibling)
+// console.log(document.querySelector('[data-current="h"]').previousSibling)
 //
 // //lekin keyingi yoki avvalgi tagni olmoqchi bolsak nextElementSibling va previousElementSibling
 // //ishlatamiz
@@ -39,7 +39,7 @@
 // //textlarni olib tashlash uchun biz nodeName ishlatamiz
 //
 // for(let node of document.body.childNodes){
-//     if (node.nodeName === '#text'){
+//     if (node.nodeName === '#text' || node.nodeName === '#comment'){
 //         continue
 //     }
 //     console.log(node)

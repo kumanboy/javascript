@@ -12,14 +12,13 @@
 //2 usulning 1 - minus tarafi biz yaratilgan eventni malum bir vaqt otib ochirib tashlay olmaymiz
 //2 usulning 2 - minus tarafi 1ta btnga 2ta event yozib yuborsak xato korsatmaydi
 //lekin 1chi yozilgan eventimiz kksiz bb qoldi
-
-// const buttn = document.querySelector('#btn')
-// const overlay = document.querySelector('.overlay')
-//
-// buttn.onclick= function () {
+const buttn = document.querySelector('#btn')
+const overlay = document.querySelector('.overlay')
+// //
+// buttn.onclick= ()=> {
 //     alert('2 usul 1')
 // }
-//
+// //
 // buttn.onclick= function () {
 //     alert('2 usul 2')
 // }
@@ -36,10 +35,14 @@
 // buttn.addEventListener('mouseenter',() =>  {
 //     alert('Hover')
 // })
+
+// document.addEventListener("click", function(){
+//     document.getElementById("demo").innerHTML = "Hello World!";
+// });
 //
 // //har bitta xodisamizni ozini malumotlari mavjud
 //
-// buttn.addEventListener('mouseenter',(event) =>  {
+// buttn.addEventListener('click',(event) =>  {
 //     console.log(event) //event.target , event.target.remove ishlatib korish
 // })
 
@@ -76,10 +79,11 @@
 //preventDefault() metodini ishlatish
 
 // const link = document.querySelector('a')
-//
-// link.addEventListener('click',(e)=>{
-//     e.preventDefault()
-//     alert('Link')
+// //
+// link.addEventListener('click',(event)=>{
+//     event.preventDefault()
+//     const user = prompt('Enter your name')
+//     console.log(user)
 // })
 
 // 3ta buttonlarimiz bosilganda bir xil malumot chiqarmoqchi bolsak quyidagi kod yoziladi
@@ -88,24 +92,24 @@
 
 
 // const btns = document.querySelectorAll('button')
-
-//1chi navbatda biz forEach orqali iteratsiya qilib chiqishimiz kerak boladi
-//songra ozimizni elementimizga event(hodisa) qoshsak boladi
-
+//
+// //1chi navbatda biz forEach orqali iteratsiya qilib chiqishimiz kerak boladi
+// //songra ozimizni elementimizga event(hodisa) qoshsak boladi
+//
 // btns.forEach((item) => {
 //     item.addEventListener('click',() => {
-//         console.log(item)
+//         alert("hello niggas i am working with events")
 //     })
 // })
-
-//yani massivemizga eventlar bermoqchi bolsak albatta iteratsiya qilishimiz kerak boladi
-
-//buttonlarimiz bir martadan bosiladigan qilishimiz uchun quyidagi kod yoziladi
-
+//
+// //yani massivemizga eventlar bermoqchi bolsak albatta iteratsiya qilishimiz kerak boladi
+//
+// //buttonlarimiz bir martadan bosiladigan qilishimiz uchun quyidagi kod yoziladi
+//
 // const oneClick = () =>{
 //     console.log(1)
 // }
-//
+// //
 // btns.forEach((item) => {
 //     item.addEventListener('click',oneClick,{once:true})
 // })

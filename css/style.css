@@ -30,7 +30,7 @@ button {
     outline: none;
     position: relative;
 }
-.circle__wrapper {
+#circle__wrapper {
     display: flex;
     position: relative;
     margin-top: 10px;
@@ -116,4 +116,8 @@ button {
     width: 100%;
     padding:30px;
     background-color: coral;
+}
+.btn{
+    background-color: #553d67;
+
 }
