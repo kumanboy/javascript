@@ -35,18 +35,18 @@ const age = +prompt("How old are u","13");
 
 //Switch Case
 
-const color = 2;
-//
-switch(color){
-    case 2:
-        console.log("STOP");
-        break;
-    case "yellow":
-        console.log("READY");
-        break;
-    case "green":
-        console.log("GO");
-        break;
-    default:
-        console.log("Go Home Nigga");
-}
+// const color = 2;
+// //
+// switch(color){
+//     case 2:
+//         console.log("STOP");
+//         break;
+//     case "yellow":
+//         console.log("READY");
+//         break;
+//     case "green":
+//         console.log("GO");
+//         break;
+//     default:
+//         console.log("Go Home Nigga");
+// }

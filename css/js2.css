@@ -32,7 +32,6 @@ button {
     border: none;
     transition: 0.3s all;
 }
-
 .blue {
     background-color: blue;
 }
@@ -40,3 +39,4 @@ button {
 .red {
     background-color: red;
 }
+

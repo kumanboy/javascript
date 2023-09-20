@@ -6,9 +6,36 @@
 //     console.log('hello');
 // }, 3000);
 
-//biz setTimeout methodimizni bir ozgaruvchiga saqlab olishimiz kerak
+//biz setTimeout methodimizni bir ozgaruvchiga saqlab olishimiz kerak,sababi malum bir vaqtdan keyin uni toxtatishimiz kk boladi
+const btn = document.querySelector('#move_btn');
 
-const btn = document.querySelector('#btn');
+let timerDD
+btn.addEventListener('click', () => {
+  timerDD = setInterval(logger, 3000);
+})
+
+
+function logger() {
+    console.log('hello');
+}
+//clearInterval va clearTimeout
+
+let timeoutID;
+
+function setOutput(outputContent) {
+  document.querySelector("#output").textContent = outputContent;
+}
+
+function delayedMessage() {
+  setOutput("");
+  timeoutID = setTimeout(setOutput, 2 * 1000, "That was really slow!");
+}
+
+function clearMessage() {
+  clearTimeout(timeoutID);
+}
+
+
 
 function myAnimation() {
   const car = document.querySelector('.car');
