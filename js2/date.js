@@ -15,6 +15,7 @@ const start = new Date()
 
 for (let i = 0; i < 10000000; i++) {
     let some = i ** 3
+    //smth
 }
 
 const end = new Date()
