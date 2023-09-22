@@ -39,4 +39,18 @@ button {
 .red {
     background-color: red;
 }
+.box1 {
+    box-sizing: border-box;
+    width: 400px;
+    height: 350px;
+    overflow: scroll;
+    margin: 50px auto 0;
+    padding: 10px;
+}
+button {
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 20px auto 0;
+}
 
