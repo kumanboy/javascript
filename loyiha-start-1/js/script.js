@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     //TIMER
 
-    const deadline = '2023-09-21'
+    const deadline = '2023-09-23'
 
     function getTimeRemaining(endtime) {
         let days, hours, minutes, seconds
@@ -100,6 +100,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     setClock('.timer', deadline)
+
 // Modal
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
@@ -116,7 +117,7 @@ window.addEventListener('DOMContentLoaded', () => {
         modal.classList.add('show')
         modal.classList.remove('hide')
         document.body.style.overflow = 'hidden'
-        // clearInterval(modalTimerId)
+        clearInterval(modalTimerId)
     }
 
     modalTrigger.forEach((item) => {
@@ -129,15 +130,16 @@ window.addEventListener('DOMContentLoaded', () => {
         if (e.target == modal) {
             closeModal()
         }
+        // console.log(e.target)
     })
 
     document.addEventListener('keydown', (e) => {
-        if (e.code === 'Escape' && modal.classList.contains('show')) {
+        if (e.code === 'Enter' && modal.classList.contains('show')) {
             closeModal()
         }
     })
 
-    const modalTimerId = setTimeout(openModal, 5000)
+    const modalTimerId = setTimeout(openModal, 3000)
 
     function showModalByScroll() {
         if (
@@ -147,9 +149,98 @@ window.addEventListener('DOMContentLoaded', () => {
             openModal()
             window.removeEventListener('scroll', showModalByScroll)
         }
+        // console.log(window.pageYOffset)
     }
 
     window.addEventListener('scroll', showModalByScroll)
+// Class
+    class MenuCard {
+        constructor(src, alt, title, descr, price, parentSelector, ...classes) {
+            this.src = src
+            this.alt = alt
+            this.title = title
+            this.descr = descr
+            this.price = price
+            this.classes = classes
+            this.parent = document.querySelector(parentSelector)
+            this.transfer = 11000
+            this.chageToUZS()
+        }
+
+        chageToUZS() {
+            this.price = this.price * this.transfer
+        }
+
+        render() {
+            const element = document.createElement('div')
+
+            if (this.classes.length === 0) {
+                this.element = 'menu__item'
+                element.classList.add(this.element)
+            } else {
+                this.classes.forEach((classname) => element.classList.add(classname))
+            }
+
+            element.innerHTML = `
+        <img src=${this.src} alt=${this.alt} />
+        <h3 class="menu__item-subtitle">${this.title}</h3>
+        <div class="menu__item-descr">${this.descr}</div>
+        <div class="menu__item-divider"></div>
+        <div class="menu__item-price">
+          <div class="menu__item-cost">Price:</div>
+          <div class="menu__item-total"><span>${this.price}</span> uzs/month</div>
+        </div>
+      `
+
+            this.parent.append(element)
+        }
+    }
+
+    new MenuCard(
+        'img/tabs/1.png',
+        'usual',
+        'Plan "Usual"',
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditatebeatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.',
+        10,
+        '.menu .container'
+    ).render()
+
+    new MenuCard(
+        'img/tabs/2.jpg',
+        'plan',
+        'Plan “Premium”',
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditatebeatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.',
+        20,
+        '.menu .container',
+        'menu__item'
+    ).render()
+
+    new MenuCard(
+        'img/tabs/3.jpg',
+        'vip',
+        'Plan VIP',
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditatebeatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.',
+        30,
+        '.menu .container',
+        'menu__item'
+    ).render()
+
+//     Rest Operator
+//     function logger (a,b,...rest) {
+//         console.log(a,b,rest)
+//     }
+//     logger(1,2,3,4,5,6,7,8,9)
+
+// Default parameter
+
+// function defaultParam(a, b ) { //b = 4
+//     console.log(a * b)
+// }
+// defaultParam(2,4)
+
 })
+
+
+
 
 
