@@ -163,7 +163,7 @@ window.addEventListener('DOMContentLoaded', () => {
             this.price = price
             this.classes = classes
             this.parent = document.querySelector(parentSelector)
-            this.transfer = 11000
+            this.transfer = 12000
             this.chageToUZS()
         }
 

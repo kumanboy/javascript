@@ -4,11 +4,11 @@
 // 1-) Oddiy functionni contexti ya'ni this xar doim window global objectga qaram bo'ladi
 // ya'ni osiladi. Agarda qati'y rejim yoqu bo'lsa (use strict) context undefinedga teng bo'ladi
 
-function logger() {
-    console.log(this)
-}
-
-logger()
+// function logger() {
+//     console.log(this)
+// }
+//
+// logger()
 
 
 
@@ -39,7 +39,7 @@ logger()
 
 //Context this objectni ichidagi metodda - objectni o'ziga teng
 //*******************************---------------************************
-// 3-) Context this funksiya konstruktorda yangi objectni ekzempyariga teng
+// 3-) Context this funksiya konstruktorda yangi objectni ekzemplyariga teng boladi
 // function Car(name, color) {
 //     this.name = name
 //     this.color = color

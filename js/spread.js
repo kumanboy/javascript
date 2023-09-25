@@ -25,19 +25,19 @@
 
 //Objectlarmizni ham spread operatori orqali clonlashimiz mn
 
-// const islamic = {
-//     name: "Muslim",
-//     age: 30,
-//     isMarried: true
-//     x:{
-//         a: 1,
-//         b: 2
-//     }
-// }
-//
-// const newIslamic = {...islamic}
-//
-// newIslamic.name = "Yusuf"
-//
-// console.log(newIslamic)
-// console.log(islamic)
+const islamic = {
+    name: "Muslim",
+    age: 30,
+    isMarried: true,
+    x:{
+        a: 1,
+        b: 2
+    }
+}
+
+const newIslamic = {...islamic}
+
+newIslamic.name = "Yusuf"
+
+console.log(newIslamic)
+console.log(islamic)
