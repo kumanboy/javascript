@@ -1,51 +1,53 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const tabParent = document.querySelector('.tabheader__items'),
-      tabs = document.querySelectorAll('.tabheader__item'),
-      tabContent = document.querySelectorAll('.tabcontent'),
-      loader = document.querySelector('.loader');
-    //tabContentlarimzni commentdan ochib olamiz
+    const tabsParent = document.querySelector('.tabheader__items'),
+        tabs = document.querySelectorAll('.tabheader__item'),
+        tabsContent = document.querySelectorAll('.tabcontent'),
+        loader = document.querySelector('.loader')
 
-    //kodimiz rasvo chiqib qoldi shuning uchun endi biz 2ta function yaratishimiz kerak. 1chisi contentlarimizni yashiradigan
-    // 2chisi tablarimizni nomi bosilgan korinadigan
-//LOADER
-    setTimeout(()=> {
+    // Loader
+    setTimeout(() => {
         loader.style.opacity = '0'
-        setTimeout(() =>{
+        setTimeout(() => {
             loader.style.display = 'none'
-        },500)
-    },2000)
-    //TABS
-    function hideTabContent(){
-        tabContent.forEach(item => {
-            item.style.display = 'none'
+        }, 500)
+    }, 2000)
+
+    // Tabs
+    function hideTabContent() {
+        tabsContent.forEach((item) => {
+            item.classList.add('hide')
+            item.classList.remove('show', 'fade')
         })
-        tabs.forEach(item => {
+
+        tabs.forEach((item) => {
             item.classList.remove('tabheader__item_active')
         })
     }
 
-    function showTabContent(i){
-        tabContent[i].style.display = 'block'
+    function showTabContent(i = 0) {
+        tabsContent[i].classList.add('show', 'fade')
+        tabsContent[i].classList.remove('hide')
         tabs[i].classList.add('tabheader__item_active')
     }
 
     hideTabContent()
-    showTabContent(0)
-//
-    tabParent.addEventListener('click', (event) => {
+    showTabContent()
+
+    tabsParent.addEventListener('click', (event) => {
         const target = event.target
         if (target && target.classList.contains('tabheader__item')) {
-            tabs.forEach((item, i) => {
+            tabs.forEach((item, idx) => {
                 if (target == item) {
                     hideTabContent()
-                    showTabContent(i)
+                    showTabContent(idx)
                 }
             })
         }
     })
-    //TIMER
 
-    const deadline = '2023-09-23'
+    // Timer
+
+    const deadline = '2022-08-11'
 
     function getTimeRemaining(endtime) {
         let days, hours, minutes, seconds
@@ -66,7 +68,13 @@ window.addEventListener('DOMContentLoaded', () => {
         return { timer, days, hours, minutes, seconds }
     }
 
-
+    function getZero(num) {
+        if (num >= 0 && num < 10) {
+            return `0${num}`
+        } else {
+            return num
+        }
+    }
 
     function setClock(selector, endtime) {
         const timer = document.querySelector(selector),
@@ -74,11 +82,11 @@ window.addEventListener('DOMContentLoaded', () => {
             hours = timer.querySelector('#hours'),
             minutes = timer.querySelector('#minutes'),
             seconds = timer.querySelector('#seconds'),
-            timeInterval = setInterval(updateClock, 1000)
+            timeInterval = setInterval(updatClock, 1000)
 
-        updateClock()
+        updatClock()
 
-        function updateClock() {
+        function updatClock() {
             const t = getTimeRemaining(endtime)
 
             days.innerHTML = getZero(t.days)
@@ -91,18 +99,10 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    function getZero(num) {
-        if (num >= 0 && num < 10) {
-            return `0${num}`
-        } else {
-            return num
-        }
-    }
 
     setClock('.timer', deadline)
 
-// Modal
-
+    // Modal
     const modalTrigger = document.querySelectorAll('[data-modal]'),
         modal = document.querySelector('.modal'),
         modalCloseBtn = document.querySelector('[data-close]')
@@ -130,30 +130,29 @@ window.addEventListener('DOMContentLoaded', () => {
         if (e.target == modal) {
             closeModal()
         }
-        // console.log(e.target)
     })
 
     document.addEventListener('keydown', (e) => {
-        if (e.code === 'Enter' && modal.classList.contains('show')) {
+        if (e.code === 'Escape' && modal.classList.contains('show')) {
             closeModal()
         }
     })
 
-    const modalTimerId = setTimeout(openModal, 3000)
+    const modalTimerId = setTimeout(openModal, 50000)
 
     function showModalByScroll() {
         if (
             window.pageYOffset + document.documentElement.clientHeight >=
-            document.documentElement.scrollHeight - 1
+            document.documentElement.scrollHeight
         ) {
             openModal()
             window.removeEventListener('scroll', showModalByScroll)
         }
-        // console.log(window.pageYOffset)
     }
 
     window.addEventListener('scroll', showModalByScroll)
-// Class
+
+    // Class
     class MenuCard {
         constructor(src, alt, title, descr, price, parentSelector, ...classes) {
             this.src = src
@@ -163,7 +162,7 @@ window.addEventListener('DOMContentLoaded', () => {
             this.price = price
             this.classes = classes
             this.parent = document.querySelector(parentSelector)
-            this.transfer = 12000
+            this.transfer = 11000
             this.chageToUZS()
         }
 
@@ -225,22 +224,55 @@ window.addEventListener('DOMContentLoaded', () => {
         'menu__item'
     ).render()
 
-//     Rest Operator
-//     function logger (a,b,...rest) {
-//         console.log(a,b,rest)
-//     }
-//     logger(1,2,3,4,5,6,7,8,9)
+    // Form
+    const forms = document.querySelectorAll('form')
 
-// Default parameter
+    forms.forEach((form) => {
+        postData(form)
+    })
 
-// function defaultParam(a, b ) { //b = 4
-//     console.log(a * b)
-// }
-// defaultParam(2,4)
+    const msg = {
+        loading: 'Loading...',
+        success: "Thank's for submitting our form",
+        failure: 'Something went wrong',
+    }
 
+    function postData(form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+
+            const statusMessage = document.createElement('div')
+            statusMessage.textContent = msg.loading
+            form.append(statusMessage)
+
+            const request = new XMLHttpRequest()
+            request.open('POST', 'server.php')
+
+            request.setRequestHeader('Content-Type', 'application/json')
+
+            const obj = {}
+            const formData = new FormData(form)
+
+            formData.forEach((val, key) => {
+                obj[key] = val
+            })
+
+            const json = JSON.stringify(obj)
+
+            request.send(json)
+
+            request.addEventListener('load', () => {
+                if (request.status === 200) {
+                    console.log(request.response)
+                    statusMessage.textContent = msg.success
+                    form.reset()
+                    setTimeout(() => {
+                        statusMessage.remove()
+                    }, 2000)
+                } else {
+                    statusMessage.textContent = msg.failure
+                }
+            })
+        })
+    }
 })
-
-
-
-
-
